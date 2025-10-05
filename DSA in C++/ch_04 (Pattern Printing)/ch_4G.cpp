@@ -1,4 +1,8 @@
-//triangular pattern
+//triangular pattern with same character in a row
+//  A
+//  B B
+//  C C C
+//  D D D D
 #include<iostream>
 using namespace std;
 int main(){

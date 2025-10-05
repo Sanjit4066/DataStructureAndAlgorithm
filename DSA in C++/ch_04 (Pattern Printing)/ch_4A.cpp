@@ -1,4 +1,4 @@
-//Here I am printing square pattern
+//Here I am printing square pattern with '*'
 // * * * * * 
 // * * * * * 
 // * * * * * 

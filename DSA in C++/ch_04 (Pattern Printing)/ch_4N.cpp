@@ -1,4 +1,11 @@
 // here I'm printing hollow diamond pattern
+//    *
+//   * *
+//  *   *
+// *     *
+//  *   *
+//   * *
+//    *
 #include <iostream>
 using namespace std;
 
