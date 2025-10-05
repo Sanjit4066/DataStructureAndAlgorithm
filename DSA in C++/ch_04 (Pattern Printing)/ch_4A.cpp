@@ -1,4 +1,9 @@
 //Here I am printing square pattern
+// * * * * * 
+// * * * * * 
+// * * * * * 
+// * * * * * 
+// * * * * * 
 #include<iostream>
 using namespace std;
 int main(){
