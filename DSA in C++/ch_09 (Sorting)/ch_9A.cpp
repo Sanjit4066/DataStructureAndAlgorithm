@@ -1,5 +1,5 @@
 /* Merger sort Problem
-we have given two array 
+we have given two sorted array 
 arr1={10,25,30,35}
 arr2={20,31,38,39,40,50}
 Now we have to merge both array which should be sorted
@@ -33,4 +33,4 @@ int main(){
         cout << newArr[m] << " ";
     }
     return 0;
-}
+} 
