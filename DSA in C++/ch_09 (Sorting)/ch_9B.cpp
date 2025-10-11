@@ -23,7 +23,7 @@ void bubbleSort(int arr[], int n)
     cout << endl;
 }
 int main()
-{   int nums[]={2,4,6,1,3,5,9};
+{   int nums[]={5,8,7,3,1,2};
     int  n = sizeof(nums)/sizeof(nums[0]);
     bubbleSort(nums,n);
     return 0;
