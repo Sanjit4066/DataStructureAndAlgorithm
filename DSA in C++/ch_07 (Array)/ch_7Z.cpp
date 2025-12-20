@@ -1,3 +1,4 @@
+//Painter's partition problem an extension of Book Allocation problem
 #include<iostream>
 #include<vector>
 using namespace std;
