@@ -9,8 +9,9 @@ int missingEle(vector<int>nums){
     sort(nums.begin(),nums.end());
     int ans =0;
     
-    int range = nums[n-1]+1; // range is always start from 0
+    int range = nums[n-1]+1; // range is always start from 0 and end at n-1
     if(n == range){
+        cout<<"Nothing is missing"<<endl;
         return -1;
     }
     else{
@@ -24,7 +25,7 @@ int missingEle(vector<int>nums){
     return ans;
 }
 int main(){
-  vector<int>nums = {0,1,3,4,6,7,5,8,9};
+  vector<int>nums = {0,1,3,4,6,7,5,8,9,2,11};
   int result = missingEle(nums);
   cout<<"Missing Element: "<<result;
   
