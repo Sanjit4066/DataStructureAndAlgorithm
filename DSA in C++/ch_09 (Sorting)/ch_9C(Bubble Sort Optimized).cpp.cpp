@@ -5,19 +5,21 @@ using namespace std;
 void bubbleSort(int arr[], int n)
 {
     
-    for (int i = 0; i < n; i++)
-    {   bool isSwap=false; 
-        for (int j = 0; j < n - i - 1; j++)
-        {
-            if (arr[j] > arr[j + 1])
+    
+    for (int i = 0; i < n- 1; i++)
+    {   int flag = 0; // flag
+        for (int j = 0; j < n-1-i; j++) // comparison
+        {   
+            if (arr[j]>arr[j+1]) //swapping
             {
-                swap(arr[j], arr[j + 1]); // swapping larger value with smaller to next index
-                isSwap=true; // set true if swapping happens
+                swap(arr[j], arr[j+1]);
+                flag = 1;       // set to 1 if swapping happens
             }
+            
         }
-        if (!isSwap) // if sorting is not performed then it will return.
+        if (flag == 0)         // no swapping then stop, we have sorted array no more pass needed
         {
-            return;
+            break;
         }
         
     }
@@ -28,7 +30,7 @@ void bubbleSort(int arr[], int n)
     cout << endl;
 }
 int main()
-{   int nums[]={2,4,6,1,3,5,9};
+{   int nums[]={5,8,7,3,1,2,12,18,6};
     int  n = sizeof(nums)/sizeof(nums[0]);
     bubbleSort(nums,n);
     return 0;

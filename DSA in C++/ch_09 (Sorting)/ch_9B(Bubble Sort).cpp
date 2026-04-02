@@ -6,14 +6,16 @@ using namespace std;
 void bubbleSort(int arr[], int n)
 {
     
-    for (int i = 0; i < n; i++)
+    
+    for (int i = 0; i < n- 1; i++)
     {
-        for (int j = 0; j < n - i - 1; j++)
+        for (int j = 0; j < n-1-i; j++)
         {
-            if (arr[j] > arr[j + 1])
+            if (arr[j]>arr[j+1])
             {
-                swap(arr[j], arr[j + 1]); // swapping larger value with smaller to next index
+               swap(arr[j], arr[j+1]);
             }
+            
         }
     }
     for (int i = 0; i < n; i++) // printing sorted array
@@ -23,7 +25,7 @@ void bubbleSort(int arr[], int n)
     cout << endl;
 }
 int main()
-{   int nums[]={5,8,7,3,1,2};
+{   int nums[]={5,8,7,3,1,2,12,18,6};
     int  n = sizeof(nums)/sizeof(nums[0]);
     bubbleSort(nums,n);
     return 0;
